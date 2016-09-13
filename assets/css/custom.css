@@ -1,0 +1,32 @@
+body{
+	/* background-color: #ffffff; */
+}
+
+hr{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* BOOTSTRAP CUSTOMIZATION: STARTS; */
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-collapse {
+    overflow-x: visible;
+    padding-right: 0px;
+    padding-left: 0px; 
+}
+
+.clear-padding-lr {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* BOOTSTRAP CUSTOMIZATION: ENDS; */
+
+.inline-display{
+	display: inline !important;
+}
