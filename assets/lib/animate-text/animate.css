@@ -29,7 +29,12 @@
 }
 
 .animate-text ul {
-  margin-top:0;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+
+  margin-top: -40px;
   padding-left:50px;
   text-align:left;
   list-style:none;
@@ -37,7 +42,7 @@
   -webkit-animation-duration: 50s;
   -webkit-animation-iteration-count: infinite;
   animation-name: change;
-  animation-duration: 50s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
 }
 

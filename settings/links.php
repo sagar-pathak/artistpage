@@ -9,5 +9,6 @@
 	define('VIEWS_DIR',"app/views/");
 	define('HEADER',VIEWS_DIR."commons/header.php");
 	define('FEED_HEADER',VIEWS_DIR."commons/feed-header.php");
+	define('IMG_SLIDER', VIEWS_DIR."commons/img-slider.php");
 	define('HOMEPAGE',VIEWS_DIR.'home.php');
 ?>
