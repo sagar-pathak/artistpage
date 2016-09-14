@@ -1,7 +1,7 @@
 <?php
 
-	define('DOMAIN_NAME', "http://sarojroshanbhattarai.com");
-	define('TITLE', "Saroj Roshan Bhattarai");
+	define('DOMAIN_NAME', "http://artistpage.com");
+	define('TITLE', "Artist Name");
 	//STRINGS
 	define('MENU1',"HOME");
 	define('MENU2',"ABOUT");

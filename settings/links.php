@@ -8,5 +8,6 @@
 	// COMPONENTS
 	define('VIEWS_DIR',"app/views/");
 	define('HEADER',VIEWS_DIR."commons/header.php");
+	define('FEED_HEADER',VIEWS_DIR."commons/feed-header.php");
 	define('HOMEPAGE',VIEWS_DIR.'home.php');
 ?>

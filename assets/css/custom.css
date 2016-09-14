@@ -5,6 +5,7 @@ body{
 hr{
 	margin-top: 0px;
 	margin-bottom: 0px;
+    border: 1px solid #F5F5F5;;
 }
 
 /* BOOTSTRAP CUSTOMIZATION: STARTS; */
@@ -26,6 +27,15 @@ hr{
 }
 
 /* BOOTSTRAP CUSTOMIZATION: ENDS; */
+
+.clear-margin-b{
+    margin-bottom: 0 !important;
+}
+
+.clear-padding-lr{
+    padding-left: 0 !important;
+    padding-right:0 !important;
+}
 
 .inline-display{
 	display: inline !important;
