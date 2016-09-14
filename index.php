@@ -1,28 +1,51 @@
 <?php
 	header("Content-Type: text/html");
 	require("settings/links.php");
-	require dirname(__FILE__).'/'.LIB_DIR.'AltoRouter.php';
+	require LIB_DIR.'AltoRouter.php';
 
 	function main(){
 
 		$router = new AltoRouter();
 		$router->setBasePath('/WebProjects/artist');
+		print_r($router->basePath);
+		$GLOBALS['lang']="en";
+
+
 		// map homepage
 		$router->map( 'GET', '/', function() {
 			require(LANG_DIR."strings-en.php");
 			require HOMEPAGE;
 		});
 
-		$router->map( 'GET', '/[a:l]', function() {
-			//require(LANG_DIR."strings-np.php");
-			echo $l;
-			//require HOMEPAGE;
+		$router->map( 'GET', '/[a:lang]', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require HOMEPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require HOMEPAGE;
+			}
 		});
 
-		// $router->map( 'GET', '[*:en]', function() {
-		// 	require(LANG_DIR."strings-en.php");
-		// 	require HOMEPAGE;
-		// });	
+		$router->map( 'GET', '/[a:lang]/', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require HOMEPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require HOMEPAGE;
+			}
+		});
+
+		$router->map( 'GET', '/[a:lang]/home', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require HOMEPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require HOMEPAGE;
+			}
+		});
 
 		// match current request url
 		$match = $router->match();

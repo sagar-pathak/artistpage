@@ -15,7 +15,7 @@ class AltoRouter {
 	/**
 	 * @var string Can be used to ignore leading part of the Request URL (if main file lives in subdirectory of host)
 	 */
-	protected $basePath = '';
+	public $basePath = '';
 
 	/**
 	 * @var array Array of default match types (regex helpers)
