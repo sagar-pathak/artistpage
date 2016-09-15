@@ -18,7 +18,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav hidden-xs hidden-sm">
           <li style="padding-top:11px;"><a class="inline-display clear-padding-lr" href="#">नेपाली</a>|<a class="inline-display clear-padding-lr" href="#">English</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
