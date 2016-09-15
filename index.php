@@ -1,16 +1,14 @@
 <?php
 	header("Content-Type: text/html");
+	require 'assets/lib/AltoRouter.php';
+
+	$router = new AltoRouter();
+	$router->setBasePath('/WebProjects/artist');
+	define('BASE_PATH', $router->basePath);
+
 	require("settings/links.php");
-	require LIB_DIR.'AltoRouter.php';
 
-	function main(){
-
-		$router = new AltoRouter();
-		$router->setBasePath('/WebProjects/artist');
-		print_r($router->basePath);
-		$GLOBALS['lang']="en";
-
-
+	function main($router){
 		// map homepage
 		$router->map( 'GET', '/', function() {
 			require(LANG_DIR."strings-en.php");
@@ -59,5 +57,5 @@
 		}
 	}
 
-	main();
+	main($router);
 ?>

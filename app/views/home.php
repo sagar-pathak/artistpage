@@ -1,28 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title><?php echo TITLE; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="<?php echo CSS_DIR; ?>bootstrap/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="<?php echo CSS_DIR; ?>custom.css">
-    <link rel="stylesheet" href="<?php echo LIB_DIR; ?>animate-text/animate.css">
-    <link rel="stylesheet" href="<?php echo LIB_DIR; ?>bxslider/jquery.bxslider.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="<?php echo JS_DIR; ?>html5shiv.js"></script>
-      <script src="<?php echo JS_DIR; ?>respond.min.js"></script>
-    <![endif]-->
-    </head>
-  <body>
-    <?php include(HEADER); ?>
-    <?php include(FEED_HEADER); ?>
-    <?php include(IMG_SLIDER); ?>
-    <script src="<?php echo JS_DIR; ?>jquery-1.10.2.min.js"></script>
-    <script src="<?php echo JS_DIR; ?>jquery.fitvids.js"></script>
-    <script src="<?php echo JS_DIR; ?>bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo LIB_DIR; ?>bxslider/jquery.bxslider.js"></script>
-    <script src="<?php echo JS_DIR; ?>custom.js"></script>
-  </body>
-</html>
+<?php
+  include(HEADER); 
+  include(FEED_HEADER);
+  include(IMG_SLIDER); 
+  $_GET['title'] = "Latest Videos"; include(HEADING); 
+?>
+<!-- Latest Videos: starts -->
+<div class="container latest-videos">
+  <div class="col-xs-12 col-sm-12 col-md-8 clear-padding-l">
+    <div class="col-xs-6 col-sm-4 col-md-4 clear-padding-l">
+      <a href="https://www.youtube.com/watch?v=HomAZcKm3Jo" data-title="Sintel Movie Project" class="latest-video img-rounded" id="latest_vid1"></a>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-4 clear-padding-l">
+      <a href="https://www.youtube.com/watch?v=FFJ2mQ40bAs" data-title="Addhishree Cover Train" class="latest-video img-rounded" id="latest_vid2"></a>
+    </div>
+    <div class="hidden-xs col-sm-4 col-md-4 clear-padding-l">
+      <a href="https://www.youtube.com/watch?v=Q1JTjLiV3ls" data-title="Jigloo Short Movie" class="latest-video img-rounded" id="latest_vid3"></a>
+    </div>
+  </div>
+</div>
+<!-- Latest Videos: ends -->
+<?php
+  include(FOOTER); 
+?>
