@@ -30,6 +30,41 @@ hr{
   font-weight: bold;
 }
 
+.splash {
+    margin-top: 50px;
+    padding: 6em 0 8em;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.splash h2{
+  color: white;
+  margin: 0 0 30px 0;
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.splash h2 span{
+  color: red;
+}
+
+.footer{
+  padding: 3em 0 3em;
+  background-color:#2E2E2E;
+}
+
+.copyright{
+  font-size: 13px;
+}
+
 /* BOOTSTRAP CUSTOMIZATION: STARTS; */
 
 .navbar-default {
