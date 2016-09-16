@@ -15,6 +15,16 @@
 			require HOMEPAGE;
 		});
 
+		$router->map( 'GET', '/about', function() {
+			require(LANG_DIR."strings-en.php");
+			require ABOUTPAGE;
+		});
+
+		$router->map( 'GET', '/about[*]', function() {
+			require(LANG_DIR."strings-en.php");
+			require ABOUTPAGE;
+		});
+
 		$router->map( 'GET', '/[a:lang]', function($lang) {
 			if($lang == "ne"){
 				require(LANG_DIR."strings-np.php");
@@ -44,6 +54,37 @@
 				require HOMEPAGE;
 			}
 		});
+
+		$router->map( 'GET', '/[a:lang]/home[*]', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require HOMEPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require HOMEPAGE;
+			}
+		});
+
+		$router->map( 'GET', '/[a:lang]/about', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require ABOUTPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require ABOUTPAGE;
+			}
+		});
+
+		$router->map( 'GET', '/[a:lang]/about[*]', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require ABOUTPAGE;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require ABOUTPAGE;
+			}
+		});
+
 
 		// match current request url
 		$match = $router->match();

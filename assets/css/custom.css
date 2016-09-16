@@ -1,5 +1,6 @@
 body{
 	/* background-color: #ffffff; */
+  height: 100%;
 }
 
 hr{
@@ -63,6 +64,17 @@ hr{
 
 .copyright{
   font-size: 13px;
+}
+
+.copyright a:hover{
+  text-decoration: none;
+}
+
+.content{
+    min-height: 70%;
+    min-height: -webkit-calc(100% - 186px);
+    min-height: -moz-calc(100% - 186px);
+    min-height: calc(100% - 186px);
 }
 
 /* BOOTSTRAP CUSTOMIZATION: STARTS; */

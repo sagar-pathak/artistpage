@@ -1,4 +1,5 @@
 <?php
+  include(ACTIVE_PAGE_CHECKER);
   include(HEADER); 
   include(FEED_HEADER);
   include(IMG_SLIDER); 

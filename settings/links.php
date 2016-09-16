@@ -12,6 +12,10 @@
 	define('FOOTER',VIEWS_DIR."commons/footer.php");
 	define('FEED_HEADER',VIEWS_DIR."commons/feed-header.php");
 	define('IMG_SLIDER', VIEWS_DIR."commons/img-slider.php");
-	define('HOMEPAGE',VIEWS_DIR.'home.php');
 	define('HEADING', VIEWS_DIR.'commons/heading.php');
+	define('ACTIVE_PAGE_CHECKER', VIEWS_DIR.'commons/active-page-checker.php');
+
+	// PAGES
+	define('HOMEPAGE',VIEWS_DIR.'home.php');
+	define('ABOUTPAGE', VIEWS_DIR.'about.php');
 ?>
