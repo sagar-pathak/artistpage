@@ -3,13 +3,14 @@
   include(HEADER); 
   //include(FEED_HEADER);
 ?>
-<div class="container about">
+<div class="container about" style="margin-top: -1px;">
 	<div class="col-md-6 about-sidebar">
 		<img src="<?php echo IMG_DIR; ?>about-sidebar.png" />			
 	</div>
-	<div class="col-md-6" style="margin-top: 50px;">
+	<div class="col-md-6 clear-padding-lr" style="border:1px solid #ccc;">
+		<div class="menu-heading"><span class="title">ABOUT</span></div>
+		<div class="about-content" style="margin-top: 50px;">
 		<?php $_GET['title']="Firstname Lastname";include(HEADING); ?>
-		<div class="about-content">
 				I’m a queer Trinidadian cisgender woman of color. I work as a Frontend Engineer in New York, and I’ve been active in the engineering world for 6 years.
 
 				I was lucky enough to have a supportive mother, who got me thalida.com for my 16th birthday. It was one of the best gifts I’ve ever received, and is the reason I've become the developer I am today.

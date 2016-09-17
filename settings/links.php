@@ -1,4 +1,6 @@
 <?php
+	
+	define('DOMAIN_NAME', "http://localhost");
 
 	define('CSS_DIR',BASE_PATH."/assets/css/");
 	define('IMG_DIR',BASE_PATH."/assets/images/");
@@ -15,7 +17,13 @@
 	define('HEADING', VIEWS_DIR.'commons/heading.php');
 	define('ACTIVE_PAGE_CHECKER', VIEWS_DIR.'commons/active-page-checker.php');
 
+	//LIB
+	define('THUMB',LIB_DIR."thumb/thumb.php?src=");
+
 	// PAGES
 	define('HOMEPAGE',VIEWS_DIR.'home.php');
 	define('ABOUTPAGE', VIEWS_DIR.'about.php');
+	define('GALLERY', VIEWS_DIR.'gallery.php');
+	define('VIDEOS', VIEWS_DIR.'videos.php');
+
 ?>

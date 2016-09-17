@@ -20,6 +20,59 @@
 			require ABOUTPAGE;
 		});
 
+		// gallery router
+		$router->map( 'GET', '/gallery', function() {
+			require(LANG_DIR."strings-en.php");
+			require GALLERY;
+		});
+
+		$router->map( 'GET', '/gallery[*]', function() {
+			require(LANG_DIR."strings-en.php");
+			require GALLERY;
+		});
+
+		$router->map( 'GET', '/gallery[*]/', function() {
+			require(LANG_DIR."strings-en.php");
+			require GALLERY;
+		});
+
+		$router->map( 'GET', '/[a:lang]/gallery[*]', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require GALLERY;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require GALLERY;
+			}
+		});
+
+		// videos router
+		$router->map( 'GET', '/videos', function() {
+			require(LANG_DIR."strings-en.php");
+			require VIDEOS;
+		});
+
+		$router->map( 'GET', '/videos[*]', function() {
+			require(LANG_DIR."strings-en.php");
+			require VIDEOS;
+		});
+
+		$router->map( 'GET', '/videos[*]/', function() {
+			require(LANG_DIR."strings-en.php");
+			require VIDEOS;
+		});
+
+		$router->map( 'GET', '/[a:lang]/videos[*]', function($lang) {
+			if($lang == "ne"){
+				require(LANG_DIR."strings-np.php");
+				require VIDEOS;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require VIDEOS;
+			}
+		});
+
+
 		$router->map( 'GET', '/about[*]', function() {
 			require(LANG_DIR."strings-en.php");
 			require ABOUTPAGE;

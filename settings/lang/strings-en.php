@@ -1,6 +1,5 @@
 <?php
 
-	define('DOMAIN_NAME', "http://artistpage.com");
 	define('TITLE', "Artist Name");
 	//STRINGS
 	define('MENU1',"HOME");

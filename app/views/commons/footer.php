@@ -27,12 +27,12 @@
 	          	Developed and maintained by <a href="#">Sagar</a>
 			</div>
   	    </div>
-        <div class="container visible-xs">
-            <div class="copyright pull-left">
-                Copyrights © 2016 All Rights Reserved by Arti<br/>
+        <div class="container visible-xs" style="text-align: center;">
+            <div class="copyright">
+                Copyrights © 2016 All Rights Reserved by Artist<br/>
                 <a href="#">Terms of Use</a>|<a href="#">Privacy Policy</a>
-            </div>
-            <div class="copyright pull-right">
+            </div><br/>
+            <div class="copyright">
                 Developed and maintained by <a href="#">Sagar</a>
             </div>
         </div>
@@ -47,6 +47,10 @@
         <script src="'.LIB_DIR.'bxslider/jquery.bxslider.js"></script>
         <script src="'.LIB_DIR.'youtube-thumbnails/youtube.thumbnails.js"></script>
         <script src="'.JS_DIR.'custom.js"></script>';
+      }else if(ACTIVE_GALLERY || ACTIVE_VIDEOS){
+        echo '<script src="'.LIB_DIR.'bootstrap-blueimp/blueimp-gallery.min.js"></script>
+        <script src="'.LIB_DIR.'bootstrap-blueimp/bootstrap-image-gallery.js"></script>
+        <script src="'.LIB_DIR.'bootstrap-blueimp/blueimp-custom.js"></script>'.PHP_EOL;
       }
     ?>
   </body>

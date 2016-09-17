@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="<?php echo CSS_DIR; ?>custom.css">
     <link rel="stylesheet" href="<?php echo LIB_DIR; ?>animate-text/animate.css">
     <link rel="stylesheet" href="<?php echo LIB_DIR; ?>bxslider/jquery.bxslider.css">
+    <?php
+    if(ACTIVE_GALLERY || ACTIVE_VIDEOS){
+      echo '<link rel="stylesheet" href="'.LIB_DIR.'bootstrap-blueimp/blueimp-gallery.min.css">
+      <link rel="stylesheet" href="'.LIB_DIR.'bootstrap-blueimp/bootstrap-image-gallery.css">'.PHP_EOL;
+    }
+    ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="<?php echo JS_DIR; ?>html5shiv.js"></script>
@@ -44,8 +50,8 @@
             <ul class="nav navbar-nav navbar-right">
               <li <?php echo ACTIVE_HOME; ?>><a href="home"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>
               <li <?php echo ACTIVE_ABOUT; ?>><a href="about"><?php echo MENU2; ?></a></li>
-              <li><a href="#"><?php echo MENU3; ?></a></li>
-              <li><a href="#"><?php echo MENU4; ?></a></li>
+              <li <?php echo ACTIVE_GALLERY; ?>><a href="gallery"><?php echo MENU3; ?></a></li>
+              <li <?php echo ACTIVE_VIDEOS; ?>><a href="videos"><?php echo MENU4; ?></a></li>
               <li><a href="#"><?php echo MENU5; ?></a></li>
               <li><a href="#"><?php echo MENU6; ?></a></li>
             </ul>

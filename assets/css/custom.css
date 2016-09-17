@@ -129,6 +129,63 @@ hr{
   padding-left: 1em;
 }
 
+#videos .thumbnail:after {
+    font-family: "Glyphicons Halflings";
+    -webkit-font-smoothing: antialiased;
+    content: "\e029";
+    line-height: 64px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    font-size: 64px;
+    margin: -125px 0 0 140px;
+}
+
+#videos .thumbnail{
+  padding: 10px;
+}
+
+#videos .caption{
+  margin-bottom: 40px;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #videos a:after {
+    font-size: 64px;
+    margin: -130px 0 0 90px;
+  } 
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  #videos a:after {
+    font-size: 30px;
+    margin: -170px 0 0 50px;
+  } 
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) { 
+  #videos a:after {
+    font-size: 30px;
+    margin: -195px 0 0 40px;
+  } 
+}
+
 
 /* BOOTSTRAP CUSTOMIZATION: STARTS; */
 
