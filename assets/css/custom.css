@@ -65,6 +65,7 @@ hr{
 
 .copyright{
   font-size: 13px;
+  padding-right: 25px;
 }
 
 .copyright a:hover{
@@ -93,14 +94,12 @@ hr{
 
 .about-sidebar{
   background-color: #fcfcfc;
-  border-right: 1px solid #f5f5f5;
+  /* border-right: 1px solid #f5f5f5; */
 }
 
 .about-content{
-  background-color: #777777;
-  color: white;
   border-radius: 5px;
-  padding: 2em 1em 5em 1em;
+  padding: 0 1em 2em 1em;
   font-size: 16px;
 }
 
@@ -116,6 +115,18 @@ hr{
 
 .about .social-media a{
   margin-right: 5px;
+}
+
+.menu-heading{
+  background-color: #777777;
+  padding:10px 0 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-heading .title{
+  padding-left: 1em;
 }
 
 
