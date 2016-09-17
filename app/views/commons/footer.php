@@ -18,15 +18,24 @@
         </div>
       </div>
       <div class="container-fluid footer">
-  	    <div class="container">
-            	<div class="copyright pull-left">
-  	          	Copyrights © 2016 All Rights Reserved by Artist<br/>
-  				<a href="#">Terms of Use</a>|<a href="#">Privacy Policy</a>
-  			</div>
-  			<div class="copyright pull-right">
-  	          	Developed and maintained by <a href="#">Sagar</a>
-  			</div>
+  	    <div class="container hidden-xs">
+            <div class="copyright pull-left">
+	          	Copyrights © 2016 All Rights Reserved by Artist<br/>
+				<a href="#">Terms of Use</a>|<a href="#">Privacy Policy</a>
+			</div>
+			<div class="copyright pull-right">
+	          	Developed and maintained by <a href="#">Sagar</a>
+			</div>
   	    </div>
+        <div class="container visible-xs">
+            <div class="copyright pull-left">
+                Copyrights © 2016 All Rights Reserved by Arti<br/>
+                <a href="#">Terms of Use</a>|<a href="#">Privacy Policy</a>
+            </div>
+            <div class="copyright pull-right">
+                Developed and maintained by <a href="#">Sagar</a>
+            </div>
+        </div>
   	 </div>
     </footer>
    <!-- footer text: ends -->
