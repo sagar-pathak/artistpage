@@ -9,6 +9,14 @@
 	$router->setBasePath('/WebProjects/artist');
 	define('BASE_PATH', $router->basePath);
 
+	if( !isset($_SESSION["lang"]) ){
+		$_SESSION["lang"] = en;
+	}
+
+	require("settings/lang/getlang.php");
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$_SESSION['lang'] = getCurrentLang(BASE_PATH, $actual_link);
+
 	require("settings/links.php");
 
 	function main($router){

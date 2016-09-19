@@ -2,16 +2,15 @@
 	
 	define('DOMAIN_NAME', "http://localhost");
 
-	if(isset($_SESSION['lang'])){
-		$lang = ($_SESSION['lang'] != 'en')?'ne':'en';
-	}else{
-		$lang = 'en';
-	}
+	$rootPath = DOMAIN_NAME."/WebProjects/artist/";
 
-	$rootPath = DOMAIN_NAME."/WebProjects/artist/".$lang."/";
+	$rootPathLang = $rootPath.$_SESSION['lang']."/";
 
 	define('ROOT_PATH', $rootPath, true);
 	define('ROOT_PATH', $rootPath);
+
+	define('ROOT_PATH_LANG', $rootPathLang, true);
+	define('ROOT_PATH_LANG', $rootPathLang);
 
 	define('CSS_DIR',BASE_PATH."/assets/css/");
 	define('IMG_DIR',BASE_PATH."/assets/images/");
@@ -27,6 +26,9 @@
 	define('IMG_SLIDER', VIEWS_DIR."commons/img-slider.php");
 	define('HEADING', VIEWS_DIR.'commons/heading.php');
 	define('ACTIVE_PAGE_CHECKER', VIEWS_DIR.'commons/active-page-checker.php');
+
+	// UTILITY
+	define('SETLANG', LANG_DIR."setlang.php?lang=");
 
 	//LIB
 	define('THUMB',LIB_DIR."thumb/thumb.php?src=");

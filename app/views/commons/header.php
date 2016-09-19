@@ -45,14 +45,14 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav hidden-xs hidden-sm">
-              <li style="padding-top:11px;"><a class="inline-display clear-padding-lr" href="#">नेपाली</a>|<a class="inline-display clear-padding-lr" href="#">English</a></li>
+              <li style="padding-top:11px;"><a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == 'ne'){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'ne'; ?>">नेपाली</a>|<a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == 'en'){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'en'; ?>">English</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li <?php echo ACTIVE_HOME; ?>><a href="<?php echo ROOT_PATH."home"; ?>"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>
-              <li <?php echo ACTIVE_ABOUT; ?>><a href="<?php echo ROOT_PATH."about"; ?>"><?php echo MENU2; ?></a></li>
-              <li <?php echo ACTIVE_GALLERY; ?>><a href="<?php echo ROOT_PATH."gallery"; ?>"><?php echo MENU3; ?></a></li>
-              <li <?php echo ACTIVE_VIDEOS; ?>><a href="<?php echo ROOT_PATH."videos"; ?>"><?php echo MENU4; ?></a></li>
-              <li <?php echo ACTIVE_FEEDBACK; ?>><a href="<?php echo ROOT_PATH."feedback"; ?>"><?php echo MENU5; ?></a></li>
+              <li <?php echo ACTIVE_HOME; ?>><a href="<?php echo ROOT_PATH_LANG."home"; ?>"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>
+              <li <?php echo ACTIVE_ABOUT; ?>><a href="<?php echo ROOT_PATH_LANG."about"; ?>"><?php echo MENU2; ?></a></li>
+              <li <?php echo ACTIVE_GALLERY; ?>><a href="<?php echo ROOT_PATH_LANG."gallery"; ?>"><?php echo MENU3; ?></a></li>
+              <li <?php echo ACTIVE_VIDEOS; ?>><a href="<?php echo ROOT_PATH_LANG."videos"; ?>"><?php echo MENU4; ?></a></li>
+              <li <?php echo ACTIVE_FEEDBACK; ?>><a href="<?php echo ROOT_PATH_LANG."feedback"; ?>"><?php echo MENU5; ?></a></li>
             </ul>
           </div>
         </div>
