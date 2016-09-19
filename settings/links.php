@@ -2,6 +2,17 @@
 	
 	define('DOMAIN_NAME', "http://localhost");
 
+	if(isset($_SESSION['lang'])){
+		$lang = ($_SESSION['lang'] != 'en')?'ne':'en';
+	}else{
+		$lang = 'en';
+	}
+
+	$rootPath = DOMAIN_NAME."/WebProjects/artist/".$lang."/";
+
+	define('ROOT_PATH', $rootPath, true);
+	define('ROOT_PATH', $rootPath);
+
 	define('CSS_DIR',BASE_PATH."/assets/css/");
 	define('IMG_DIR',BASE_PATH."/assets/images/");
 	define('JS_DIR',BASE_PATH."/assets/js/");
@@ -25,5 +36,6 @@
 	define('ABOUTPAGE', VIEWS_DIR.'about.php');
 	define('GALLERY', VIEWS_DIR.'gallery.php');
 	define('VIDEOS', VIEWS_DIR.'videos.php');
+	define('FEEDBACK', VIEWS_DIR.'feedback.php');
 
 ?>

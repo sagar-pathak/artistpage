@@ -13,6 +13,10 @@
 		define('ACTIVEPAGE', 'videos');
 	}
 
+	if (strpos($actual_link, '/feedback') !== false) {
+		define('ACTIVEPAGE', 'feedback');
+	}
+
 	if(defined('ACTIVEPAGE')){
 		switch(ACTIVEPAGE){
 			case 'home':
@@ -27,6 +31,9 @@
 			case 'videos':
 				define('ACTIVE_VIDEOS', 'class="active"');
 				break;
+			case 'feedback':
+				define('ACTIVE_FEEDBACK', 'class="active"');
+				break;
 		}
 	}
 
@@ -36,4 +43,5 @@
 	if(!(defined('ACTIVE_ABOUT') && ACTIVE_ABOUT)){ define('ACTIVE_ABOUT',''); }
 	if(!(defined('ACTIVE_GALLERY') && ACTIVE_GALLERY)){ define('ACTIVE_GALLERY',''); }
 	if(!(defined('ACTIVE_VIDEOS') && ACTIVE_VIDEOS)){ define('ACTIVE_VIDEOS',''); }
+	if(!(defined('ACTIVE_FEEDBACK') && ACTIVE_FEEDBACK)){ define('ACTIVE_FEEDBACK',''); }
 ?>

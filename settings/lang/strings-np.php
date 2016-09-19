@@ -5,7 +5,6 @@
 	define('MENU2',"मेरो बारे");
 	define('MENU3',"फोटो ग्यालरी");
 	define('MENU4',"भिडियो");
-	define('MENU5'," समाचार");
-	define('MENU6',"प्रतिक्रिया");
+	define('MENU5'," प्रतिक्रिया");
 
 ?>

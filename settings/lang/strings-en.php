@@ -6,7 +6,6 @@
 	define('MENU2',"ABOUT");
 	define('MENU3',"GALLERY");
 	define('MENU4',"VIDEOS");
-	define('MENU5',"NEWS");
-	define('MENU6',"FEEDBACK");
+	define('MENU5',"FEEDBACK");
 
 ?>

@@ -1,6 +1,9 @@
 <?php
 	header("Content-Type: text/html");
+	//error_reporting(0);
 	require 'assets/lib/AltoRouter.php';
+
+	session_start();
 
 	$router = new AltoRouter();
 	$router->setBasePath('/WebProjects/artist');
@@ -36,8 +39,20 @@
 			require GALLERY;
 		});
 
+		$router->map( 'GET', '/[a:lang]/gallery', function($lang) {
+			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
+				require(LANG_DIR."strings-np.php");
+				require GALLERY;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require GALLERY;
+			}
+		});
+
 		$router->map( 'GET', '/[a:lang]/gallery[*]', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require GALLERY;
 			}else{
@@ -62,13 +77,63 @@
 			require VIDEOS;
 		});
 
-		$router->map( 'GET', '/[a:lang]/videos[*]', function($lang) {
+		$router->map( 'GET', '/[a:lang]/videos', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require VIDEOS;
 			}else{
 				require(LANG_DIR."strings-en.php");
 				require VIDEOS;
+			}
+		});
+
+		$router->map( 'GET', '/[a:lang]/videos[*]', function($lang) {
+			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
+				require(LANG_DIR."strings-np.php");
+				require VIDEOS;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require VIDEOS;
+			}
+		});
+
+		// feedback router
+		$router->map( 'GET', '/feedback', function() {
+			require(LANG_DIR."strings-en.php");
+			require FEEDBACK;
+		});
+
+		$router->map( 'GET', '/feedback[*]', function() {
+			require(LANG_DIR."strings-en.php");
+			require FEEDBACK;
+		});
+
+		$router->map( 'GET', '/feedback[*]/', function() {
+			require(LANG_DIR."strings-en.php");
+			require FEEDBACK;
+		});
+
+		$router->map( 'GET', '/[a:lang]/feedback', function($lang) {
+			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
+				require(LANG_DIR."strings-np.php");
+				require FEEDBACK;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require FEEDBACK;
+			}
+		});
+
+		$router->map( 'GET', '/[a:lang]/feedback[*]', function($lang) {
+			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
+				require(LANG_DIR."strings-np.php");
+				require FEEDBACK;
+			}else{
+				require(LANG_DIR."strings-en.php");
+				require FEEDBACK;
 			}
 		});
 
@@ -80,6 +145,7 @@
 
 		$router->map( 'GET', '/[a:lang]', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require HOMEPAGE;
 			}else{
@@ -90,6 +156,7 @@
 
 		$router->map( 'GET', '/[a:lang]/', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require HOMEPAGE;
 			}else{
@@ -100,6 +167,7 @@
 
 		$router->map( 'GET', '/[a:lang]/home', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require HOMEPAGE;
 			}else{
@@ -110,6 +178,7 @@
 
 		$router->map( 'GET', '/[a:lang]/home[*]', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require HOMEPAGE;
 			}else{
@@ -120,6 +189,7 @@
 
 		$router->map( 'GET', '/[a:lang]/about', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require ABOUTPAGE;
 			}else{
@@ -130,6 +200,7 @@
 
 		$router->map( 'GET', '/[a:lang]/about[*]', function($lang) {
 			if($lang == "ne"){
+				$_SESSION['lang'] = 'ne';
 				require(LANG_DIR."strings-np.php");
 				require ABOUTPAGE;
 			}else{

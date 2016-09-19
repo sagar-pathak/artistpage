@@ -48,12 +48,11 @@
               <li style="padding-top:11px;"><a class="inline-display clear-padding-lr" href="#">नेपाली</a>|<a class="inline-display clear-padding-lr" href="#">English</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li <?php echo ACTIVE_HOME; ?>><a href="home"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>
-              <li <?php echo ACTIVE_ABOUT; ?>><a href="about"><?php echo MENU2; ?></a></li>
-              <li <?php echo ACTIVE_GALLERY; ?>><a href="gallery"><?php echo MENU3; ?></a></li>
-              <li <?php echo ACTIVE_VIDEOS; ?>><a href="videos"><?php echo MENU4; ?></a></li>
-              <li><a href="#"><?php echo MENU5; ?></a></li>
-              <li><a href="#"><?php echo MENU6; ?></a></li>
+              <li <?php echo ACTIVE_HOME; ?>><a href="<?php echo ROOT_PATH."home"; ?>"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>
+              <li <?php echo ACTIVE_ABOUT; ?>><a href="<?php echo ROOT_PATH."about"; ?>"><?php echo MENU2; ?></a></li>
+              <li <?php echo ACTIVE_GALLERY; ?>><a href="<?php echo ROOT_PATH."gallery"; ?>"><?php echo MENU3; ?></a></li>
+              <li <?php echo ACTIVE_VIDEOS; ?>><a href="<?php echo ROOT_PATH."videos"; ?>"><?php echo MENU4; ?></a></li>
+              <li <?php echo ACTIVE_FEEDBACK; ?>><a href="<?php echo ROOT_PATH."feedback"; ?>"><?php echo MENU5; ?></a></li>
             </ul>
           </div>
         </div>
