@@ -15,9 +15,17 @@ if(isset($_SERVER['HTTP_REFERER'])){
 
 	if (strpos($referrerUrl, '/en') !== false) {
 		$redirectTo = str_replace("/en","/ne", $referrerUrl);
-	}
-	if (strpos($referrerUrl, '/ne') !== false) {
+	}else if(strpos($referrerUrl, '/ne') !== false) {
 		$redirectTo = str_replace("/ne","/en", $referrerUrl);
+	}else{
+		$rootPath = $_SESSION['rootPath'];
+		/*$otherParamsArr = explode(, $referrerUrl);
+		if(array_key_exists(1, $otherParamsArr)){
+			$otherParamStr = $otherParams[1]; 
+			$redirectTo = ROOT_PATH."en".$otherParamStr;
+		}*/
+		echo $rootPath;
+		die();
 	}
 	
 	header('Location: '.$redirectTo);

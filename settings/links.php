@@ -4,13 +4,10 @@
 
 	$rootPath = DOMAIN_NAME."/WebProjects/artist/";
 
-	$rootPathLang = $rootPath.$_SESSION['lang']."/";
-
 	define('ROOT_PATH', $rootPath, true);
 	define('ROOT_PATH', $rootPath);
 
-	define('ROOT_PATH_LANG', $rootPathLang, true);
-	define('ROOT_PATH_LANG', $rootPathLang);
+	$_SESSION['rootPath'] = $rootPath;
 
 	define('CSS_DIR',BASE_PATH."/assets/css/");
 	define('IMG_DIR',BASE_PATH."/assets/images/");

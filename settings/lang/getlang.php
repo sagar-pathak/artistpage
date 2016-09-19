@@ -8,9 +8,8 @@
 			$langStr = substr($langStrTemp, 0, 3);
 			if($langStr == "ne" || $langStr == "ne/"){
 				$_SESSION['lang'] = 'ne';
-				define('ACTIVE_NE', 'underline');
 			}else{
-				define('ACTIVE_EN', 'underline');
+				$_SESSION['lang'] = 'en';
 			}
 		}
 		return $_SESSION['lang'];

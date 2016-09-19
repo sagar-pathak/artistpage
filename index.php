@@ -10,7 +10,7 @@
 	define('BASE_PATH', $router->basePath);
 
 	if( !isset($_SESSION["lang"]) ){
-		$_SESSION["lang"] = en;
+		$_SESSION["lang"] = "en";
 	}
 
 	require("settings/lang/getlang.php");
