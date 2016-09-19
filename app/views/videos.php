@@ -12,67 +12,79 @@ include(HEADER);
 		<div class="col-md-12">
 			<div id="videos" class="clear-padding-l">
 				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<a
-						class="thumbnail"
-						href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-						data-youtube="8XlYXl111XI"
-						title="Fruits"
-						type="text/html"
-						data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-						><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-					</a>
-					<div class="caption">
-						<h4>Thumbnail label</h4>
-						<p></p>
-						<p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p>
+					<div class="col-md-12">
+						<a
+							class="thumbnail"
+							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
+							data-youtube="8XlYXl111XI"
+							title="Fruits"
+							type="text/html"
+							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
+							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-12">
+						<div class="caption">
+							<h4>Thumbnail label</h4>
+							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+							</div>
 					</div>
 				</div>
 				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<a
-						class="thumbnail"
-						href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-						data-youtube="8XlYXl111XI"
-						title="Fruits"
-						type="text/html"
-						data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-						><img class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-					</a>
-					<div class="caption">
-						<h4>Thumbnail label</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-						<p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p>
+					<div class="col-md-12">
+						<a
+							class="thumbnail"
+							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
+							data-youtube="8XlYXl111XI"
+							title="Fruits"
+							type="text/html"
+							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
+							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-12">
+						<div class="caption">
+							<h4>Thumbnail label</h4>
+							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+							</div>
 					</div>
 				</div>
 				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<a
-						class="thumbnail"
-						href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-						data-youtube="8XlYXl111XI"
-						title="Fruits"
-						type="text/html"
-						data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-						><img class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-					</a>
-					<div class="caption">
-						<h4>Thumbnail label</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-						<p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p>
+					<div class="col-md-12">
+						<a
+							class="thumbnail"
+							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
+							data-youtube="8XlYXl111XI"
+							title="Fruits"
+							type="text/html"
+							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
+							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-12">
+						<div class="caption">
+							<h4>Thumbnail label</h4>
+							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+							</div>
 					</div>
 				</div>
 				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<a
-						class="thumbnail"
-						href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-						data-youtube="8XlYXl111XI"
-						title="Fruits"
-						type="text/html"
-						data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-						><img class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-					</a>
-					<div class="caption">
-						<h4>Thumbnail label</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-						<p><a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a></p>
+					<div class="col-md-12">
+						<a
+							class="thumbnail"
+							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
+							data-youtube="8XlYXl111XI"
+							title="Fruits"
+							type="text/html"
+							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
+							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-12">
+						<div class="caption">
+							<h4>Thumbnail label</h4>
+							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -102,14 +114,6 @@ include(HEADER);
 			</div>
 			<div class="modal-body next"></div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default pull-left prev">
-				<i class="glyphicon glyphicon-chevron-left"></i>
-				Previous
-				</button>
-				<button type="button" class="btn btn-primary next">
-				Next
-				<i class="glyphicon glyphicon-chevron-right"></i>
-				</button>
 			</div>
 		</div>
 	</div>

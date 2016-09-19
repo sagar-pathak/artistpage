@@ -139,7 +139,7 @@ hr{
     position: absolute;
     top: 50%;
     font-size: 64px;
-    margin: -125px 0 0 140px;
+    margin: -50px 0 0 120px;
 }
 
 #videos .thumbnail{
@@ -154,35 +154,41 @@ hr{
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+  #videos .thumbnail:after {
+    font-size: 64px;
+    margin: -50px 0 0 120px;
+  } 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  #videos .thumbnail:after {
+    font-size: 64px;
+    margin: -50px 0 0 120px;
+  } 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  #videos a:after {
-    font-size: 64px;
-    margin: -130px 0 0 90px;
+  #videos .thumbnail:after {
+    font-size: 50px;
+    margin: -35px 0 0 80px;
   } 
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-  #videos a:after {
-    font-size: 30px;
-    margin: -170px 0 0 50px;
+  #videos .thumbnail:after {
+    font-size: 40px;
+    margin: -30px 0 0 30px;
   } 
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) { 
-  #videos a:after {
-    font-size: 30px;
-    margin: -195px 0 0 40px;
+  #videos .thumbnail:after {
+    font-size: 15px;
+    margin: -30px 0 0 25px;
   } 
 }
 
