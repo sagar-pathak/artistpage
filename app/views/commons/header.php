@@ -45,7 +45,7 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav hidden-xs hidden-sm">
-              <li style="padding-top:11px;"><a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == "ne"){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'ne'; ?>">नेपाली</a>|<a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == "en"){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'en'; ?>">English</a></li>
+              <li style="padding-top:11px;"><a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == "ne"){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'ne&root='.ROOT_PATH; ?>">नेपाली</a>|<a class="inline-display clear-padding-lr <?php if($_SESSION['lang'] == "en"){echo " underline";}?>" href="<?php echo ROOT_PATH.SETLANG.'en&root='.ROOT_PATH; ?>">English</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li <?php echo ACTIVE_HOME; ?>><a href="<?php echo ROOT_PATH.$_SESSION['lang']."/home"; ?>"><?php echo MENU1; ?><span class="sr-only">(current)</span></a></li>

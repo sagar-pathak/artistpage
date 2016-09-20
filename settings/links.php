@@ -7,8 +7,6 @@
 	define('ROOT_PATH', $rootPath, true);
 	define('ROOT_PATH', $rootPath);
 
-	$_SESSION['rootPath'] = $rootPath;
-
 	define('CSS_DIR',BASE_PATH."/assets/css/");
 	define('IMG_DIR',BASE_PATH."/assets/images/");
 	define('JS_DIR',BASE_PATH."/assets/js/");

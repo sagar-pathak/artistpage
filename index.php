@@ -7,6 +7,7 @@
 
 	$router = new AltoRouter();
 	$router->setBasePath('/WebProjects/artist');
+
 	define('BASE_PATH', $router->basePath);
 
 	if( !isset($_SESSION["lang"]) ){

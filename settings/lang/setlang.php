@@ -14,18 +14,20 @@ if(isset($_SERVER['HTTP_REFERER'])){
 	$redirectTo = $referrerUrl;
 
 	if (strpos($referrerUrl, '/en') !== false) {
-		$redirectTo = str_replace("/en","/ne", $referrerUrl);
+		if($_SESSION['lang'] == 'ne'){
+			$redirectTo = str_replace("/en","/ne", $referrerUrl);
+		}
 	}else if(strpos($referrerUrl, '/ne') !== false) {
-		$redirectTo = str_replace("/ne","/en", $referrerUrl);
+		if($_SESSION['lang'] == 'en'){
+			$redirectTo = str_replace("/ne","/en", $referrerUrl);
+		}
 	}else{
-		$rootPath = $_SESSION['rootPath'];
-		/*$otherParamsArr = explode(, $referrerUrl);
+		$rootPath = $_GET['root'];
+		$otherParamsArr = explode($rootPath, $referrerUrl);
 		if(array_key_exists(1, $otherParamsArr)){
-			$otherParamStr = $otherParams[1]; 
-			$redirectTo = ROOT_PATH."en".$otherParamStr;
-		}*/
-		echo $rootPath;
-		die();
+			$otherParamStr = $otherParamsArr[1]; 
+			$redirectTo = $rootPath.$lang."/".$otherParamStr;
+		}
 	}
 	
 	header('Location: '.$redirectTo);
