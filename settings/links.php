@@ -34,5 +34,6 @@
 	define('GALLERY', VIEWS_DIR.'gallery.php');
 	define('VIDEOS', VIEWS_DIR.'videos.php');
 	define('FEEDBACK', VIEWS_DIR.'feedback.php');
+	define('ADMIN', ROOT_PATH.'/admin/');
 
 ?>

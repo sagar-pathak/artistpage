@@ -21,11 +21,17 @@
 	require("settings/links.php");
 
 	function main($router){
+
+		$router->map( 'GET', '/admin/', function() {
+			header('Location: '.ADMIN.'index.php');
+		});
+
 		// map homepage
 		$router->map( 'GET', '/', function() {
 			require(LANG_DIR."strings-en.php");
 			require HOMEPAGE;
 		});
+
 
 		$router->map( 'GET', '/about', function() {
 			require(LANG_DIR."strings-en.php");
@@ -217,7 +223,6 @@
 				require ABOUTPAGE;
 			}
 		});
-
 
 		// match current request url
 		$match = $router->match();
