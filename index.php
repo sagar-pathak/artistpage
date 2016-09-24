@@ -22,8 +22,8 @@
 
 	function main($router){
 
-		$router->map( 'GET', '/admin/', function() {
-			header('Location: '.ADMIN.'index.php');
+		$router->map( 'GET', '/admin', function() {
+			header('Location: '.ADMIN);
 		});
 
 		// map homepage
@@ -222,6 +222,12 @@
 				require(LANG_DIR."strings-en.php");
 				require ABOUTPAGE;
 			}
+		});
+
+		$router->map( 'POST', '/delete', function() {
+			$filename = $_POST['filename'];
+			unlink("assets/images/gallery/".$filename);
+			unlink("assets/images/gallery/thumbnail/".$filename);
 		});
 
 		// match current request url

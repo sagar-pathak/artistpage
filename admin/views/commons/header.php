@@ -25,6 +25,14 @@
     <link href="<?php echo ADMIN_CSS_DIR; ?>pe-icon-7-stroke.css" rel="stylesheet" />
     <link href="<?php echo ADMIN_CSS_DIR; ?>demo.css" rel="stylesheet" />
 
+    <?php if(isset($active_gallery) || isset($active_videos)){ ?>
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="<?php echo ADMIN_LIB_DIR;?>jQuery-File-Upload-9.12.5/css/blueimp-gallery.min.css">
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="<?php echo ADMIN_LIB_DIR;?>jQuery-File-Upload-9.12.5/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="<?php echo ADMIN_LIB_DIR;?>jQuery-File-Upload-9.12.5/css/jquery.fileupload-ui.css">
+    <?php } ?>
+
 </head>
 <body>
     <div class="wrapper">

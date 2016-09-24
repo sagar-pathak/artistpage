@@ -13,21 +13,19 @@
 
         <!-- image links: starts -->
         <div id="links">
+        <?php
+            if ($handle = opendir('assets/images/gallery')) {
+                while (false !== ($file = readdir($handle)))
+                {
+                    if ($file != "." && $file != ".." && strtolower(substr($file, strrpos($file, '.') + 1)) == 'jpg')
+                    {
+        ?>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="<?php echo IMG_DIR; ?>slides/slide1.jpg" title="Banana" data-gallery>
-                    <img class="img-responsive" src="<?php echo THUMB; ?>slide1.jpg&x=400&y=300&f=0" alt="">
+                <a class="thumbnail" href="<?php echo IMG_DIR."gallery/".$file; ?>" title="<?php echo ucfirst($file);?>" data-gallery>
+                    <img class="img-responsive" src="<?php echo IMG_DIR."gallery/thumbnail/".$file; ?>" alt="">
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="<?php echo IMG_DIR; ?>slides/slide2.jpg" title="Apple" data-gallery>
-                    <img class="img-responsive" src="<?php echo THUMB; ?>slide2.jpg&size=400x300&f=0" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="<?php echo IMG_DIR; ?>slides/slide3.jpg" title="Orange" data-gallery>
-                    <img class="img-responsive" src="<?php echo THUMB; ?>slide3.jpg&size=400x300&f=0" alt="">
-                </a>
-            </div>
+        <?php } } } ?>
         </div>
         <!-- image links: ends -->
 

@@ -1,9 +1,15 @@
 <?php
+	define('DOMAIN_NAME', "http://localhost");
 
+	define('ROOT_PATH', DOMAIN_NAME."/WebProjects/artist/");
 	define('ADMIN_CSS_DIR',BASE_PATH."/assets/css/");
 	define('ADMIN_IMG_DIR',BASE_PATH."/assets/img/");
 	define('ADMIN_JS_DIR',BASE_PATH."/assets/js/");
 	define('ADMIN_LIB_DIR',BASE_PATH."/assets/lib/");
+
+	// libraries
+	define('UPLOAD_SCRIPT', "assets/lib/jQuery-File-Upload-9.12.5/upload.php");
+	define('DELETE_URL', ROOT_PATH.'delete');
 
 	define('ADMIN_VIEWS_DIR',"views/");
 

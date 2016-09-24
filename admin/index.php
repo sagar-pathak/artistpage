@@ -45,6 +45,10 @@
 		$router->map( 'GET', '/password', function() {
 			require(ADMIN_SETTING);
 		});
+
+		$router->map( 'GET', '/upload', function() {
+			require(UPLOAD_SCRIPT);
+		});
 		
 		// match current request url
 		$match = $router->match();
