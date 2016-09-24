@@ -1,3 +1,40 @@
+	        <footer class="footer">
+	            <div class="container-fluid">
+	                <nav class="pull-left">
+	                    <ul>
+	                        <li>
+	                            <a href="#">
+	                                Home
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                ABOUT
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                GALLERY
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                               VIDEOS
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                               FEEDBACK
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <p class="copyright pull-right">
+	                    &copy; 2016 <a href="http://www.sagarpathak.com.np">Sagar Pathak</a>, made with love for a better web
+	                </p>
+	            </div>
+	        </footer>
+		</div> <!-- main-panel: ends -->
 	</div>
 </body>
     <!--   Core JS Files   -->

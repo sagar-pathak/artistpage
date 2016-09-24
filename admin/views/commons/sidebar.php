@@ -17,7 +17,7 @@
             <ul class="nav">
                 <li <?php if(isset($active_home)) echo $active_home;?> >
                     <a href="<?php echo BASE_PATH."/home"; ?>">
-                        <i class="pe-7s-graph"></i>
+                        <i class="pe-7s-home"></i>
                         <p>Home</p>
                     </a>
                 </li>
@@ -29,25 +29,25 @@
                 </li>
                 <li <?php if(isset($active_gallery)) echo $active_gallery;?>>
                     <a href="<?php echo BASE_PATH."/gallery"; ?>">
-                        <i class="pe-7s-science"></i>
+                        <i class="pe-7s-photo-gallery"></i>
                         <p>Gallery</p>
                     </a>
                 </li>
                 <li <?php if(isset($active_videos)) echo $active_videos;?>>
                     <a href="<?php echo BASE_PATH."/videos"; ?>">
-                        <i class="pe-7s-news-paper"></i>
+                        <i class="pe-7s-video"></i>
                         <p>Videos</p>
                     </a>
                 </li>
                 <li <?php if(isset($active_feedback)) echo $active_feedback;?>>
                     <a href="<?php echo BASE_PATH."/feedback"; ?>">
-                        <i class="pe-7s-bell"></i>
+                        <i class="pe-7s-comment"></i>
                         <p>Feedback</p>
                     </a>
                 </li>
                 <li class="active-pro">
                     <a href="<?php echo BASE_PATH."/password"; ?>">
-                        <i class="pe-7s-rocket"></i>
+                        <i class="pe-7s-settings"></i>
                         <p>Change Password</p>
                     </a>
                 </li>

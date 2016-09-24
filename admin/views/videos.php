@@ -9,7 +9,6 @@
 <?php 
 	require ADMIN_PANEL_TOP; 
 ?>
-</div>
 
 <?php
 	require ADMIN_FOOTER;
