@@ -14,6 +14,7 @@
 	define('ADMIN_PANEL_TOP', ADMIN_VIEWS_DIR."commons/panel-top.php");
 
 	// pages
+	define('ADMIN_LOGIN', ADMIN_VIEWS_DIR.'login.php');
 	define('ADMIN_HOME', ADMIN_VIEWS_DIR.'home.php');
 	define('ADMIN_ABOUT', ADMIN_VIEWS_DIR.'about.php');
 	define('ADMIN_GALLERY', ADMIN_VIEWS_DIR.'gallery.php');

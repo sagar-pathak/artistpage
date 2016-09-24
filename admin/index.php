@@ -18,6 +18,10 @@
 			require(ADMIN_HOME);
 		});
 
+		$router->map( 'GET', '/login', function() {
+			require(ADMIN_LOGIN);
+		});
+
 		$router->map( 'GET', '/home', function() {
 			require(ADMIN_HOME);
 		});
