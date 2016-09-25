@@ -1,4 +1,5 @@
 <?php
+	require(DB_CONFIG); check_session($conn);
 	$title = "About";
 	$active_about = ' class="active"';
 	require ADMIN_HEADER;

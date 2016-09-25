@@ -1,4 +1,5 @@
 <?php
+	require(DB_CONFIG); check_session($conn);
 	$title = "Gallery";
 	$active_gallery = ' class="active"';
 	require ADMIN_HEADER;

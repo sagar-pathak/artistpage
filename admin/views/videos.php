@@ -1,4 +1,5 @@
 <?php
+	require(DB_CONFIG); check_session($conn);
 	$title = "Videos";
 	$active_videos = ' class="active"';
 	require ADMIN_HEADER;

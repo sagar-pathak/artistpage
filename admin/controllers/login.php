@@ -2,7 +2,6 @@
 	require(DB_CONFIG);
 	require(MODEL_LOGIN);
 	$method = $_POST['method'];
-	print_r($_POST);
 
 	function logincontroller($method, $conn){
 		switch($method){

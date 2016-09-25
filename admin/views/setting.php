@@ -1,4 +1,5 @@
 <?php
+	require(DB_CONFIG); check_session($conn);
 	$title = "Setting";
 	require ADMIN_HEADER;
 	require ADMIN_SIDEBAR;
