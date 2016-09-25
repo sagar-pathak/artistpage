@@ -1,4 +1,6 @@
 <?php
+	require(DB_CONFIG);
+	check_session($conn);
 	$title = "Home";
 	$active_home = ' class="active"';
 	require ADMIN_HEADER;

@@ -13,6 +13,9 @@
 	define('LIB_DIR',BASE_PATH."/assets/lib/");
 	define('LANG_DIR',"settings/lang/");
 
+	// CONFIG
+	define('CONFIG', "settings/config.php");
+
 	// COMPONENTS
 	define('VIEWS_DIR',"app/views/");
 	define('HEADER',VIEWS_DIR."commons/header.php");
