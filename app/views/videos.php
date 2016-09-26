@@ -1,4 +1,7 @@
 <?php
+include(DB_CONFIG);
+include(MODEL_VIDEOS);
+
 include(ACTIVE_PAGE_CHECKER);
 include(HEADER);
 ?>
@@ -11,82 +14,27 @@ include(HEADER);
 		<!-- image links: starts -->
 		<div class="col-md-12">
 			<div id="videos" class="clear-padding-l">
+			<?php $rows = model_get_videos($conn); for($i=0; $i<count($rows); $i++){ ?>
 				<div class="video col-xs-6 col-sm-6 col-md-4">
 					<div class="col-md-12">
 						<a
 							class="thumbnail"
-							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-							data-youtube="8XlYXl111XI"
+							href="https://www.youtube.com/watch?v=<?php echo trim($rows[$i]['url']); ?>?autoplay=1"
+							data-youtube="<?php echo trim($rows[$i]['url']); ?>"
 							title="Fruits"
 							type="text/html"
-							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
+							data-poster="https://img.youtube.com/vi/<?php echo trim($rows[$i]['url']); ?>/maxresdefault.jpg"
+							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/<?php echo trim($rows[$i]['url']); ?>/maxresdefault.jpg" alt="">
 						</a>
 					</div>
 					<div class="col-md-12">
 						<div class="caption">
-							<h4>Thumbnail label</h4>
-							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+							<h4><?php echo base64_decode(trim($rows[$i]['title'])); ?></h4>
+							<p class="hidden-xs"><?php echo base64_decode($rows[$i]['description']); ?></p>
 							</div>
 					</div>
 				</div>
-				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<div class="col-md-12">
-						<a
-							class="thumbnail"
-							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-							data-youtube="8XlYXl111XI"
-							title="Fruits"
-							type="text/html"
-							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-12">
-						<div class="caption">
-							<h4>Thumbnail label</h4>
-							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-							</div>
-					</div>
-				</div>
-				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<div class="col-md-12">
-						<a
-							class="thumbnail"
-							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-							data-youtube="8XlYXl111XI"
-							title="Fruits"
-							type="text/html"
-							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-12">
-						<div class="caption">
-							<h4>Thumbnail label</h4>
-							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-							</div>
-					</div>
-				</div>
-				<div class="video col-xs-6 col-sm-6 col-md-4">
-					<div class="col-md-12">
-						<a
-							class="thumbnail"
-							href="https://www.youtube.com/watch?v=8XlYXl111XI?autoplay=1"
-							data-youtube="8XlYXl111XI"
-							title="Fruits"
-							type="text/html"
-							data-poster="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg"
-							><img id="first-img" class="img-responsive" src="https://img.youtube.com/vi/8XlYXl111XI/maxresdefault.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-md-12">
-						<div class="caption">
-							<h4>Thumbnail label</h4>
-							<p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
-							</div>
-					</div>
-				</div>
+			<?php } ?>
 			</div>
 		</div>
 		<!-- image links: ends -->

@@ -39,4 +39,12 @@
 	define('FEEDBACK', VIEWS_DIR.'feedback.php');
 	define('ADMIN', ROOT_PATH.'admin/');
 
+	// DB CONFIG MAP
+	define('DB_CONFIG', "admin/settings/db-config.php");
+
+	// MODEL MAP
+	define('MODEL_PATH', "admin/models/");
+	define('MODEL_HOME', MODEL_PATH."home.php");
+	define('MODEL_ABOUT', MODEL_PATH."about.php");
+	define('MODEL_VIDEOS', MODEL_PATH."videos.php");
 ?>

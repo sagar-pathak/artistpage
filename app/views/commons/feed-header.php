@@ -9,10 +9,9 @@
 		      <a href="#" class="btn btn-primary btn-xs" style="font-size:10px;">NEWS:</a>
 		    </p>
 		    <ul>
-		      <li><a href="#">दृष्टिविहीन बालबालिकाले अरुलाई दिए उज्यालो</a></li>
-		      <li><a href="#">एमालेलाई देखाएर सरकारले जालझेल गरेको मधेसी मोर्चाको आरोप</a></li>
-		      <li><a href="#">प्रधानमन्त्रीको भारत भ्रमण: के भन्छन् नेता, व्यावसायी र परराष्ट्रविद ?</a></li>
-		      <li><a href="#">नविन के भट्टराईको सम्झनामा सुनील बर्देवाः बहुप्रतिभाका धनी</a></li>
+		    <?php $rows = model_get_news($conn); for($i=0; $i<count($rows); $i++){ ?>
+		      <li><a href="<?php echo $rows[$i]['url']; ?>"><?php echo $rows[$i]['title_ne']; ?></a></li>
+		    <?php } ?>
 		    </ul>
 		  </div>
 		</div>

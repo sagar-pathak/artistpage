@@ -4,8 +4,8 @@ function model_add_videos($conn){
 		${'url_'.$i} = $_POST['url_'.$i];
 
 		if(trim(${'url_'.$i}) != ''){
-			${'title_'.$i} = $_POST['title_'.$i];
-			${'desc_'.$i} = $_POST['desc_'.$i];
+			${'title_'.$i} = base64_encode($_POST['title_'.$i]);
+			${'desc_'.$i} = base64_encode($_POST['desc_'.$i]);
 
 			$query = 'INSERT INTO `tbl_videos` (url, title, description) VALUES("'.${'url_'.$i} .'", "'.${'title_'.$i} .'","'.${'desc_'.$i} .'")';
 			mysqli_query($conn, $query);

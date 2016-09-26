@@ -24,8 +24,8 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="form-group">
-											<label>Video URL #<?php echo ($i+1);?></label>
-											<input type="text" class="form-control" name="videourl<?php echo ($i+1);?>" placeholder="https://www.youtube.com/watch?v=j1q4-tzMI28" value="<?php echo $rows[$i]['video_url'];?>">
+											<label>Youtube Video ID #<?php echo ($i+1);?></label>
+											<input type="text" class="form-control" name="videourl<?php echo ($i+1);?>" placeholder="e.g. j1q4-tzMI28 (youtubeid)" value="<?php echo $rows[$i]['video_url'];?>">
 										</div>
 									</div>
 								</div>
@@ -120,7 +120,13 @@
 							<form method="POST" action="<?php echo ROOT_PATH.'admin/api/home/latestvideos'; ?>">
 							<?php $rows = model_get_latestvideos($conn); for($i=0; $i<3; $i++){?>
 								<div class="row">
-									<div class="col-md-12">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Title #1</label>
+											<input type="text" name="title<?php echo ($i+1); ?>" value="<?php echo $rows[$i]['title'];?>" class="form-control" placeholder="Video Title" >
+										</div>
+									</div>
+									<div class="col-md-6">
 										<div class="form-group">
 											<label>Video URL #1</label>
 											<input type="text" name="videourl<?php echo ($i+1); ?>" value="<?php echo $rows[$i]['url'];?>" class="form-control" placeholder="https://www.youtube.com/watch?v=j1q4-tzMI28" >

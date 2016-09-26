@@ -70,9 +70,9 @@
 								<?php for($i=0; $i<count($rows); $i++){ ?>
 									<tr>
 										<td><?php echo ($i+1); ?></td>
-										<td><?php echo $rows[$i]['title']; ?></td>
+										<td><?php echo base64_decode($rows[$i]['title']); ?></td>
 										<td><?php echo $rows[$i]['url']; ?></td>
-										<td><?php echo $rows[$i]['description']; ?></td>
+										<td><?php echo base64_decode($rows[$i]['description']); ?></td>
 										<td><a href="#" data-vid="<?php echo $rows[$i]['vid']; ?>" class="btn btn-danger btn-xs delete-vid">DELETE</a></td>
 									</tr>
 								<?php } ?>

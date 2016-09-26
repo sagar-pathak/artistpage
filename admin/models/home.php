@@ -75,9 +75,12 @@ function model_set_latestvideos($conn){
 	$videourl1 = $_POST['videourl1'];
 	$videourl2 = $_POST['videourl2'];
 	$videourl3 = $_POST['videourl3'];
+	$title1 = $_POST['title1'];
+	$title2 = $_POST['title2'];
+	$title3 = $_POST['title3'];
 
 	for($id=1; $id<=3; $id++){
-		$query = 'UPDATE `tbl_latestvideos` SET url="'.${"videourl".$id}.'" WHERE vid='.$id;
+		$query = 'UPDATE `tbl_latestvideos` SET title="'.${"title".$id}.'", url="'.${"videourl".$id}.'" WHERE vid='.$id;
 		mysqli_query($conn, $query);
 	}
 }
