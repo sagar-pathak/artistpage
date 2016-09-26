@@ -30,6 +30,7 @@
 
 	//LIB
 	define('THUMB',LIB_DIR."thumb/thumb.php?src=");
+	define('RECAPTCHA', "assets/lib/recaptcha-php-1.11/recaptchalib.php");
 
 	// PAGES
 	define('HOMEPAGE',VIEWS_DIR.'home.php');

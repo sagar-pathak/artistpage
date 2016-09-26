@@ -152,6 +152,11 @@
 			}
 		});
 
+		// feedback post
+		$router->map( 'POST', '/feedback/verify', function() {
+			
+		});
+
 
 		$router->map( 'GET', '/about[*]', function() {
 			require(LANG_DIR."strings-en.php");
