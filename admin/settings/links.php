@@ -30,7 +30,6 @@
 	define('ADMIN_ABOUT', ADMIN_VIEWS_DIR.'about.php');
 	define('ADMIN_GALLERY', ADMIN_VIEWS_DIR.'gallery.php');
 	define('ADMIN_VIDEOS', ADMIN_VIEWS_DIR.'videos.php');
-	define('ADMIN_FEEDBACK', ADMIN_VIEWS_DIR.'feedback.php');
 	define('ADMIN_SETTING', ADMIN_VIEWS_DIR.'setting.php');
 
 	// models
@@ -39,7 +38,7 @@
 	define('MODEL_ABOUT', ADMIN_MODEL_DIR.'about.php');
 	define('MODEL_GALLERY', ADMIN_MODEL_DIR.'gallery.php');
 	define('MODEL_VIDEOS', ADMIN_MODEL_DIR.'videos.php');
-	define('MODEL_FEEDBACK', ADMIN_MODEL_DIR.'feedback.php');
+	define('MODEL_SETTING', ADMIN_MODEL_DIR.'setting.php');
 
 	// controllers
 	define('CONTROLLER_LOGIN', ADMIN_CONTROLLERS_DIR.'login.php');
@@ -47,6 +46,6 @@
 	define('CONTROLLER_ABOUT', ADMIN_CONTROLLERS_DIR.'about.php');
 	define('CONTROLLER_GALLERY', ADMIN_CONTROLLERS_DIR.'gallery.php');
 	define('CONTROLLER_VIDEOS', ADMIN_CONTROLLERS_DIR.'videos.php');
-	define('CONTROLLER_FEEDBACK', ADMIN_CONTROLLERS_DIR.'feedback.php');
+	define('CONTROLLER_SETTING', ADMIN_CONTROLLERS_DIR.'setting.php');
 
 ?>

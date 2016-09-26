@@ -67,9 +67,9 @@
 					require(MODEL_VIDEOS);
 					require(CONTROLLER_VIDEOS);
 					break;
-				case 'feedback':
-					require(MODEL_FEEDBACK);
-					require(CONTROLLER_FEEDBACK);
+				case 'setting':
+					require(MODEL_SETTING);
+					require(CONTROLLER_SETTING);
 					break;
 				default: 
 					header( $_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');

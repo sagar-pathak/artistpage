@@ -39,12 +39,15 @@
                         <p>Videos</p>
                     </a>
                 </li>
+                <?php /*
                 <li <?php if(isset($active_feedback)) echo $active_feedback;?>>
                     <a href="<?php echo BASE_PATH."/feedback"; ?>">
                         <i class="pe-7s-comment"></i>
                         <p>Feedback</p>
                     </a>
                 </li>
+                */
+                ?>
                 <li class="active-pro">
                     <a href="<?php echo BASE_PATH."/password"; ?>">
                         <i class="pe-7s-settings"></i>
