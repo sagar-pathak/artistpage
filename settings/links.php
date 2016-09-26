@@ -48,4 +48,11 @@
 	define('MODEL_HOME', MODEL_PATH."home.php");
 	define('MODEL_ABOUT', MODEL_PATH."about.php");
 	define('MODEL_VIDEOS', MODEL_PATH."videos.php");
+<<<<<<< HEAD
+
+	// CONTROLLER
+	define('CONTROLLER_PATH', 'app/controllers/');
+	define('CONTROLLER_FEEDBACK', CONTROLLER_PATH."feedback.php");
+=======
+>>>>>>> ce57b5b22b298aa40ae9d1f6233c47a89a2db73c
 ?>

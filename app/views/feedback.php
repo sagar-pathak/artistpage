@@ -31,7 +31,23 @@
                     <div class="col-md-12 clear-padding-l">
                         <div class="card">
                             <div class="content">
+<<<<<<< HEAD
+                                <?php if(isset($_SESSION['feedback_success'])){ ?>
+                                <div class="alert alert-dismissible alert-success">
+                                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                  <strong>Thankyou</strong> so much for your feedback!!</a>.
+                                </div>
+                                <?php unset($_SESSION['feedback_success']);} ?>
+                                <?php if(isset($_SESSION['feedback_error'])){ ?>
+                                <div class="alert alert-dismissible alert-danger">
+                                  <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                  <strong>Oh snap!</strong> <?php echo $_SESSION['feedback_error'];?>
+                                </div>
+                                <?php unset($_SESSION['feedback_error']);} ?>
+                            	<form method="post" action="<?php echo ROOT_PATH.'api/feedback/verify'; ?>">
+=======
                             	<form method="post" action="<?php echo ROOT_PATH.'feedback/verify'; ?>">
+>>>>>>> ce57b5b22b298aa40ae9d1f6233c47a89a2db73c
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
