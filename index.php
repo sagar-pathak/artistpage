@@ -153,7 +153,6 @@
 		});
 
 		// feedback post
-<<<<<<< HEAD
 		$router->map('GET|POST', '/api/[a:controller]/[a:method]', function($controller, $method) {
 			$_POST['method']=$method;
 			switch($controller){
@@ -161,12 +160,7 @@
 					require(CONTROLLER_FEEDBACK);
 				break;
 			}
-=======
-		$router->map( 'POST', '/feedback/verify', function() {
-			
->>>>>>> ce57b5b22b298aa40ae9d1f6233c47a89a2db73c
 		});
-
 
 		$router->map( 'GET', '/about[*]', function() {
 			require(LANG_DIR."strings-en.php");

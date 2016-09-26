@@ -31,7 +31,6 @@
                     <div class="col-md-12 clear-padding-l">
                         <div class="card">
                             <div class="content">
-<<<<<<< HEAD
                                 <?php if(isset($_SESSION['feedback_success'])){ ?>
                                 <div class="alert alert-dismissible alert-success">
                                   <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -45,9 +44,6 @@
                                 </div>
                                 <?php unset($_SESSION['feedback_error']);} ?>
                             	<form method="post" action="<?php echo ROOT_PATH.'api/feedback/verify'; ?>">
-=======
-                            	<form method="post" action="<?php echo ROOT_PATH.'feedback/verify'; ?>">
->>>>>>> ce57b5b22b298aa40ae9d1f6233c47a89a2db73c
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
