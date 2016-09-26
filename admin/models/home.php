@@ -27,9 +27,9 @@ function model_get_video_slider($conn){
 function model_set_news($conn){
 
 	for($i = 1; $i<=4; $i++){
-		${'title_en_'.$i} = $_POST['title_en_'.$i];
-		${'title_ne_'.$i} = $_POST['title_ne_'.$i];
-		${'url_'.$i} = $_POST['url_'.$i];
+		${'title_en_'.$i} = base64_encode($_POST['title_en_'.$i]);
+		${'title_ne_'.$i} = base64_encode($_POST['title_ne_'.$i]);
+		${'url_'.$i} = base64_encode($_POST['url_'.$i]);
 
 		$query = 'UPDATE `tbl_news` SET title_en="'.${'title_en_'.$i} .'", title_ne="'.${'title_ne_'.$i} .'",url="'.${'url_'.$i} .'" WHERE newsid='.$i;
 		mysqli_query($conn, $query);
@@ -75,9 +75,9 @@ function model_set_latestvideos($conn){
 	$videourl1 = $_POST['videourl1'];
 	$videourl2 = $_POST['videourl2'];
 	$videourl3 = $_POST['videourl3'];
-	$title1 = $_POST['title1'];
-	$title2 = $_POST['title2'];
-	$title3 = $_POST['title3'];
+	$title1 = base64_encode($_POST['title1']);
+	$title2 = base64_encode($_POST['title2']);
+	$title3 = base64_encode($_POST['title3']);
 
 	for($id=1; $id<=3; $id++){
 		$query = 'UPDATE `tbl_latestvideos` SET title="'.${"title".$id}.'", url="'.${"videourl".$id}.'" WHERE vid='.$id;

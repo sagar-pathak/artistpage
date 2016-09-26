@@ -10,7 +10,7 @@
 		    </p>
 		    <ul>
 		    <?php $rows = model_get_news($conn); for($i=0; $i<count($rows); $i++){ ?>
-		      <li><a href="<?php echo $rows[$i]['url']; ?>"><?php echo $rows[$i]['title_ne']; ?></a></li>
+		      <li><a href="<?php echo $rows[$i]['url']; ?>"><?php echo base64_decode($rows[$i]['title_ne']); ?></a></li>
 		    <?php } ?>
 		    </ul>
 		  </div>

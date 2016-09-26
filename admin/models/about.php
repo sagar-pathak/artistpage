@@ -6,8 +6,7 @@ function model_update_profileinfo($conn){
 	$email = $_POST['email'];
 	$address = $_POST['address'];
 	$backgroundimgUrl = $_POST['backgroundimageurl'];
-	$description = $_POST['description'];
-
+	$description = base64_encode($_POST['description']);
 
 	$query = 'UPDATE `tbl_about` SET firstname="'.$firstname.'", lastname="'.$lastname.'", middlename="'.$middlename.'", email="'.$email.'", address="'.$address.'", backgroundimageurl="'.$backgroundimgUrl.'", description="'.$description.'"  WHERE uid=1';
 	echo $query;

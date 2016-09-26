@@ -67,7 +67,7 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<label>About Me</label>
-											<textarea rows="5" class="form-control" name="description" placeholder="Here can be your description" value="Mike"><?php echo $rows[0]['description']; ?></textarea>
+											<textarea rows="5" class="form-control" name="description" placeholder="Here can be your description" value="Mike"><?php echo base64_decode($rows[0]['description']); ?></textarea>
 										</div>
 									</div>
 								</div>

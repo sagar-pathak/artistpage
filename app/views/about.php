@@ -16,7 +16,7 @@
 		<div class="menu-heading"><span class="title">ABOUT</span></div>
 		<div class="about-content" style="margin-top: 50px;">
 		<?php $_GET['title']=$rows[0]['firstname']." ".$rows[0]['middlename']." ".$rows[0]['lastname']; include(HEADING); ?>
-			<?php echo $rows[0]['description']; ?>	
+			<?php echo base64_decode($rows[0]['description']); ?>	
 		</div>
 		<div class="social-media">
 		<?php $rows = model_get_socialnetworks($conn); ?>

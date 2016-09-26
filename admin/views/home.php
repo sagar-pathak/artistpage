@@ -48,19 +48,19 @@
 									<div class="col-md-4">
 										<div class="form-group">
 											<label>Title(English)</label>
-											<input type="text" name="title_en_<?php echo ($i+1);?>" value="<?php echo $rows[$i]['title_en']; ?>" class="form-control" placeholder="Title (en)">
+											<input type="text" name="title_en_<?php echo ($i+1);?>" value="<?php echo base64_decode($rows[$i]['title_en']); ?>" class="form-control" placeholder="Title (en)">
 										</div>
 									</div>
 									<div class="col-md-4">
 										<div class="form-group">
 											<label>Title (Nepali)</label>
-											<input type="text" name="title_ne_<?php echo ($i+1);?>" value="<?php echo $rows[$i]['title_ne']; ?>" class="form-control" placeholder="Title (ne)">
+											<input type="text" name="title_ne_<?php echo ($i+1);?>" value="<?php echo base64_decode($rows[$i]['title_ne']); ?>" class="form-control" placeholder="Title (ne)">
 										</div>
 									</div>
 									<div class="col-md-4">
 										<div class="form-group">
 											<label for="exampleInputEmail1">URL</label>
-											<input type="text" name="url_<?php echo ($i+1);?>" value="<?php echo $rows[$i]['url']; ?>" class="form-control" placeholder="News url">
+											<input type="text" name="url_<?php echo ($i+1);?>" value="<?php echo base64_decode($rows[$i]['url']); ?>" class="form-control" placeholder="News url">
 										</div>
 									</div>
 								</div>
@@ -123,7 +123,7 @@
 									<div class="col-md-6">
 										<div class="form-group">
 											<label>Title #1</label>
-											<input type="text" name="title<?php echo ($i+1); ?>" value="<?php echo $rows[$i]['title'];?>" class="form-control" placeholder="Video Title" >
+											<input type="text" name="title<?php echo ($i+1); ?>" value="<?php echo base64_decode($rows[$i]['title']);?>" class="form-control" placeholder="Video Title" >
 										</div>
 									</div>
 									<div class="col-md-6">
